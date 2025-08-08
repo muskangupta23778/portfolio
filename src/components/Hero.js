@@ -110,7 +110,7 @@ const Hero = () => {
               <div className="relative w-80 h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl animate-float overflow-hidden">
                 <div className="w-72 h-72 bg-gradient-to-br from-white to-gray-100 rounded-full flex items-center justify-center shadow-xl border-8 border-white overflow-hidden">
                   <img 
-                    src="/profile-image2.jpg" 
+                    src={`${process.env.PUBLIC_URL}/profile-image2.jpg`} 
                     alt="Muskan Gupta" 
                     className="w-full h-full object-cover object-center rounded-full"
                     style={{ objectPosition: 'center 50%' }}
