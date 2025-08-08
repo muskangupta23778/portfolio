@@ -34,11 +34,11 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-800 via-gray-900 to-black dark:from-gray-900 dark:via-black dark:to-gray-800 pt-20 md:pt-0" ref={heroRef}>
-      {/* Animated background elements */}
+      {/* Animated background elements - reduced on mobile */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-gray-600/40 to-gray-700/40 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-gray-700/30 to-gray-800/30 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-gray-600/35 to-gray-700/35 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-gray-600/40 to-gray-700/40 rounded-full blur-3xl animate-pulse-slow hidden md:block"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-gray-700/30 to-gray-800/30 rounded-full blur-3xl animate-pulse-slow hidden md:block" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-gray-600/35 to-gray-700/35 rounded-full blur-3xl animate-pulse-slow hidden md:block" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -102,9 +102,9 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-fade-in-right" style={{ animationDelay: '0.6s' }}>
             <div className="relative">
-              {/* Animated background circles */}
-              <div className="absolute inset-0 w-80 h-80 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-2xl animate-pulse-slow"></div>
-              <div className="absolute inset-4 w-72 h-72 bg-gradient-to-r from-purple-500/15 to-blue-500/15 rounded-full blur-xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+              {/* Animated background circles - reduced on mobile */}
+              <div className="absolute inset-0 w-80 h-80 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-2xl animate-pulse-slow hidden md:block"></div>
+              <div className="absolute inset-4 w-72 h-72 bg-gradient-to-r from-purple-500/15 to-blue-500/15 rounded-full blur-xl animate-pulse-slow hidden md:block" style={{ animationDelay: '1s' }}></div>
               
               {/* Profile placeholder */}
               <div className="relative w-80 h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl animate-float overflow-hidden">
@@ -124,9 +124,9 @@ const Hero = () => {
                   </div>
                 </div>
                 
-                {/* Animated rings */}
-                <div className="absolute inset-0 border-4 border-blue-400/30 rounded-full animate-spin-slow"></div>
-                <div className="absolute inset-2 border-2 border-purple-400/20 rounded-full animate-spin-slow" style={{ animationDirection: 'reverse' }}></div>
+                {/* Animated rings - reduced on mobile */}
+                <div className="absolute inset-0 border-4 border-blue-400/30 rounded-full animate-spin-slow hidden md:block"></div>
+                <div className="absolute inset-2 border-2 border-purple-400/20 rounded-full animate-spin-slow hidden md:block" style={{ animationDirection: 'reverse' }}></div>
               </div>
             </div>
           </div>
@@ -140,10 +140,10 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating elements */}
-      <div className="absolute top-1/4 right-1/4 w-4 h-4 bg-primary-400/60 rounded-full animate-float"></div>
-      <div className="absolute bottom-1/3 left-1/4 w-2 h-2 bg-secondary-400/60 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-primary-300/40 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+      {/* Floating elements - hidden on mobile for performance */}
+      <div className="absolute top-1/4 right-1/4 w-4 h-4 bg-primary-400/60 rounded-full animate-float hidden md:block"></div>
+      <div className="absolute bottom-1/3 left-1/4 w-2 h-2 bg-secondary-400/60 rounded-full animate-float hidden md:block" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-primary-300/40 rounded-full animate-float hidden md:block" style={{ animationDelay: '2s' }}></div>
     </section>
   );
 };

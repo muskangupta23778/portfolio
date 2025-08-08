@@ -53,9 +53,39 @@ code {
   outline-offset: 2px;
 }
 
-/* Smooth transitions */
-* {
+/* Optimized transitions - only apply to specific elements, not universal */
+.btn-primary,
+.btn-secondary,
+.btn-resume,
+.card,
+.floating-element,
+.particle {
   transition: all 0.3s ease;
+}
+
+/* Mobile optimization - reduce animations on smaller screens */
+@media (max-width: 768px) {
+  .floating-element,
+  .particle,
+  .geometric-shape {
+    display: none;
+  }
+  
+  .animate-pulse-slow {
+    animation: none;
+  }
+  
+  .blur-3xl {
+    filter: blur(20px);
+  }
+  
+  .blur-2xl {
+    filter: blur(15px);
+  }
+  
+  .blur-xl {
+    filter: blur(10px);
+  }
 }
 
 /* Custom utility classes */
@@ -105,7 +135,7 @@ code {
   }
 }
 
-/* Enhanced color animations */
+/* Simplified animations for better performance */
 @keyframes colorShift {
   0%, 100% {
     background-position: 0% 50%;
@@ -118,20 +148,20 @@ code {
 @keyframes rainbowPulse {
   0%, 100% {
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
-    background-size: 400% 400%;
+    background-size: 200% 200%;
   }
   50% {
     background: linear-gradient(45deg, #ff9ff3, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
-    background-size: 400% 400%;
+    background-size: 200% 200%;
   }
 }
 
 @keyframes neonGlow {
   0%, 100% {
-    box-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor;
+    box-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
   }
   50% {
-    box-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+    box-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
   }
 }
 
@@ -224,40 +254,40 @@ code {
   animation: neonGlow 2s ease-in-out infinite;
 }
 
-/* Enhanced gradient backgrounds */
+/* Simplified gradient backgrounds for better performance */
 .gradient-bg-vibrant {
   background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: colorShift 8s ease infinite;
 }
 
 .gradient-bg-cool {
   background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: colorShift 10s ease infinite;
 }
 
 .gradient-bg-warm {
   background: linear-gradient(45deg, #fa709a, #fee140, #ff9a9e, #fecfef, #fecfef, #fecfef);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: colorShift 12s ease infinite;
 }
 
 /* Dark mode enhanced gradients */
 .dark .gradient-bg-vibrant {
   background: linear-gradient(45deg, #ff6b6b/20, #4ecdc4/20, #45b7d1/20, #96ceb4/20, #feca57/20, #ff9ff3/20);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: colorShift 8s ease infinite;
 }
 
 .dark .gradient-bg-cool {
   background: linear-gradient(45deg, #667eea/20, #764ba2/20, #f093fb/20, #f5576c/20, #4facfe/20, #00f2fe/20);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: colorShift 10s ease infinite;
 }
 
 .dark .gradient-bg-warm {
   background: linear-gradient(45deg, #fa709a/20, #fee140/20, #ff9a9e/20, #fecfef/20, #fecfef/20, #fecfef/20);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: colorShift 12s ease infinite;
 }
