@@ -41,6 +41,13 @@ const Projects = () => {
       technologies: ["React", "Tailwind CSS", "JavaScript", "HTML/CSS"],
       type: "Frontend",
       link: "#"
+    },
+    {
+      title: "Wise School Web Application",
+      description: "Created a school management web app from scratch to digitize workflows with almost zero paperwork. Focused on usability, speed, and reliability.",
+      technologies: ["React", "Node.js", "AWS"],
+      type: "Full-Stack",
+      link: "#"
     }
   ];
 

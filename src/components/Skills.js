@@ -32,13 +32,15 @@ const Skills = () => {
   const skillCategories = {
     frontend: [
       { name: "React", level: 90 },
+      { name: "Angular", level: 75 },
       { name: "JavaScript", level: 88 },
       { name: "HTML/CSS", level: 92 }
     ],
     backend: [
       { name: "Node.js", level: 85 },
       { name: "Java", level: 75 },
-      { name: "MySQL", level: 80 }
+      { name: "MySQL", level: 80 },
+      { name: "MongoDB", level: 80 }
     ],
     other: [
       { name: "Data Structures & Algorithms", level: 85 },

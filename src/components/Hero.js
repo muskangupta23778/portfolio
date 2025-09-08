@@ -91,7 +91,7 @@ const Hero = () => {
               
               <button 
                 className="btn-resume group relative overflow-hidden"
-                onClick={() => window.open('https://drive.google.com/file/d/1Ef-BoTH-JcBFP5mo0v7zPOv0Wrh9Ehie/view?usp=drivesdk', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1fCtTyhGWWbGBebVMSg-TrXu-d-HMBLo8/view?usp=drivesdk', '_blank')}
               >
                 <span className="relative z-10">View My Resume</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-secondary-600 to-primary-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>

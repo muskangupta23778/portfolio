@@ -47,12 +47,12 @@ const Experience = () => {
     {
       title: "Software Intern",
       company: "Wise School",
-      period: "Jan 2023 - July 2023",
+      period: "Dec 2022 - July 2024",
       location: "Remote",
       description: [
-        "Worked in the start up culture",
-        "Set up the Backend project in Node",
-        "Worked in Frontend using React"
+        "Created web application from scratch",
+        "Digitalized schools with almost zero paperwork",
+        "Worked with React,Node.js,AWS"
       ]
     }
   ];

@@ -62,14 +62,14 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="text-center p-4 bg-gray-800/50 backdrop-blur-md rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group border border-gray-700">
                 <div className="text-3xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform duration-300">
-                  1+
+                  2+
                 </div>
                 <div className="text-sm text-gray-300">Years Experience</div>
               </div>
               
               <div className="text-center p-4 bg-gray-800/50 backdrop-blur-md rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group border border-gray-700">
                 <div className="text-3xl font-bold text-purple-400 mb-2 group-hover:scale-110 transition-transform duration-300">
-                  10+
+                  7+
                 </div>
                 <div className="text-sm text-gray-300">Projects Completed</div>
               </div>
