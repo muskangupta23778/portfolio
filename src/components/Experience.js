@@ -27,8 +27,11 @@ const Experience = () => {
       period: "May 2025 - Present",
       location: "Noida, India",
       description: [
-        "Development of CRM application",
-        "Working on React, Node.js and MongoDB"
+        "Designed scalable front-end architecture in React.js(Hooks, Context API, reusable components)",
+        "Improved API , MongoDB performance and integrated Redux for complex workflows.",
+        "Implemented secure authentication/authorization JWT, middleware and real-time notifications WebSockets.",
+        "Collaborated on Node.js APIs, MongoDB schemas, and wrote unit/integration tests for stability",
+        "Contributed to Agile practices (sprints, code reviews, peer programming) ensuring on-time delivery.",
       ]
     },
     {
@@ -37,11 +40,10 @@ const Experience = () => {
       period: "May 2024 - May 2025",
       location: "Remote",
       description: [
-        "Working with Agile",
-        "Working on React, Node.js",
-        "Part of team working on new idea",
-        "Developed login functionality from scratch",
-        "Written unit test cases with coverage >85%"
+        "Built React.js UI and Node.js,Express APIs for booking and payments",
+        "Automated workflows with Selenium ,Java, TestNGensured >85 percentage coverage via Jest,Mocha.",
+        "Enhanced stability through unit , UI testing, reducing defects.",
+        "Contributed in Agile sprints and authored API/workflow documentation.",
       ]
     },
     {
@@ -50,9 +52,10 @@ const Experience = () => {
       period: "Dec 2022 - July 2024",
       location: "Remote",
       description: [
-        "Created web application from scratch",
-        "Digitalized schools with almost zero paperwork",
-        "Worked with React,Node.js,AWS"
+      "Co-founded and built WiseSchool ERP from scratch using React.js, Node.js,Express, and AWS" ,
+      "Delivered key ERP modules: Student Info, Fee Management, Timetable, Assignments, Reports Dashboard",
+      "Deployed AWS services (EC2, S3, Lambda) for scalability and secure file storage",
+      "Established coding standards, CI/CD pipelines, Git workflows, and mentored junior developers"
       ]
     }
   ];
