@@ -9,7 +9,7 @@ import Education from './components/Education';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 
-// Theme Context
+// Theme Context1
 const ThemeContext = createContext();
 
 export const useTheme = () => {
